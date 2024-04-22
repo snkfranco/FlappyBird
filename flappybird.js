@@ -29,9 +29,9 @@ let topPipeImage;
 let bottomPipeImage;
 
 // physics
-let velocityX = -1.8; // pipes moving left speed
+let velocityX = -2; // pipes moving left speed
 let velocityY = 0; // bird jump speed
-let gravity = 0.2;
+let gravity = 0.4;
 
 let gameOver = false;
 let score = 0;
@@ -60,7 +60,7 @@ window.onload = function() {
     bottomPipeImage.src = "./Assets/bottompipe.png";
 
     requestAnimationFrame(update);
-    setInterval(placePipes, 1300);
+    setInterval(placePipes, 1500);
     document.addEventListener("keydown", moveBird);
 }
 
